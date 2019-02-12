@@ -1,0 +1,32 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-client-watch": "webpack -w",
+    "start": "node server",
+    "start-server": "nodemon server -e html,js,scss --ignore public --ignore client",
+    "start-dev": "SET NODE_ENV='development' npm run build-client-watch & NODE_ENV='development' npm run start-server"
+  },
+  "author": "M",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.29.1",
+    "webpack-cli": "^3.2.1"
+  }
+}
